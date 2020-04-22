@@ -67,7 +67,7 @@
         left: 0;
         right: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: cadetblue; /* coleur de la div */
     }
     .header-area {
         position: relative;
@@ -119,7 +119,7 @@
         left: 15px;
         right: 15px;
         height: 2px;
-        background-color: #fff;
+        background-color: red;
         opacity: 0;
         -webkit-transform: translateY(-1px);
         -ms-transform: translateY(-1px);
@@ -153,11 +153,11 @@
     }
     .navbar-dark .navbar-nav .nav-link {
         position: relative;
-        color: #fff;
+        color: #fff;     /* coleur des element du navbar */
         font-size: 1.6rem;
     }
     .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-        color: #fff;
+        color: #fff;    /* coleur des element du navbar mouse hover*/
     }
     .navbar .dropdown-menu {
         padding: 0;
@@ -195,14 +195,14 @@
     .navbar.fixed-top {
         position: fixed;
         -webkit-animation: navbar-animation 0.6s;
-        animation: navbar-animation 0.6s;
+        animation: navbar-animation 0.5s;  /* apparution du navbar */
         background-color: rgba(0, 0, 0, .9);
     }
     .navbar.fixed-top.navbar-dark .navbar-nav .nav-link.active {
         color: #c0ca33;
     }
     .navbar.fixed-top.navbar-dark .navbar-nav .nav-link::after {
-        background-color: #c0ca33;
+        background-color: red;
     }
     .content {
         padding: 120px 0;
@@ -230,7 +230,7 @@
             font-size: 2rem;
         }
         .navbar-dark .navbar-nav .nav-link {
-            padding: 23px 15px;
+            padding: 30px 15px;      /* Longeur navbar*/
         }
         .navbar-dark .navbar-nav .nav-link::after {
             content: '';
@@ -252,8 +252,8 @@
         }
         .dropdown-menu {
             min-width: 200px;
-            -webkit-animation: dropdown-animation 0.3s;
-            animation: dropdown-animation 0.3s;
+            -webkit-animation: dropdown-animation 0.4s;
+            animation: dropdown-animation 0.4s;
             -webkit-transform-origin: top;
             -ms-transform-origin: top;
             transform-origin: top;
@@ -324,7 +324,7 @@
 
 </style>
 <header class="header-area overlay">
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
         <div class="container">
             <a href="#" class="navbar-brand">Rabat City</a>
 
@@ -395,7 +395,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
     jQuery(function ($) {
-        $(window).on("scroll", function () {
+        $(window).on("scroll", function () {  /* l apparution du navbar apres la descente*/
             if ($(this).scrollTop() >= 200) {
                 $(".navbar").addClass("fixed-top");
             } else if ($(this).scrollTop() == 0) {
