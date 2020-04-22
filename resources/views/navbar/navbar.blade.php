@@ -1,41 +1,4 @@
 
-<link rel="stylesheet" href="" />
-
-
-<script>
-    jQuery(function ($) {
-        $(window).on("scroll", function () {
-            if ($(this).scrollTop() >= 200) {
-                $(".navbar").addClass("fixed-top");
-            } else if ($(this).scrollTop() == 0) {
-                $(".navbar").removeClass("fixed-top");
-            }
-        });
-
-        function adjustNav() {
-            var winWidth = $(window).width(),
-                dropdown = $(".dropdown"),
-                dropdownMenu = $(".dropdown-menu");
-
-            if (winWidth >= 768) {
-                dropdown.on("mouseenter", function () {
-                    $(this).addClass("show").children(dropdownMenu).addClass("show");
-                });
-
-                dropdown.on("mouseleave", function () {
-                    $(this).removeClass("show").children(dropdownMenu).removeClass("show");
-                });
-            } else {
-                dropdown.off("mouseenter mouseleave");
-            }
-        }
-
-        $(window).on("resize", adjustNav);
-
-        adjustNav();
-    });
-
-</script>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
     @import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -425,4 +388,39 @@
         </div>
     </section>
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+    jQuery(function ($) {
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+                $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+                $(".navbar").removeClass("fixed-top");
+            }
+        });
+
+        function adjustNav() {
+            var winWidth = $(window).width(),
+                dropdown = $(".dropdown"),
+                dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+                dropdown.on("mouseenter", function () {
+                    $(this).addClass("show").children(dropdownMenu).addClass("show");
+                });
+
+                dropdown.on("mouseleave", function () {
+                    $(this).removeClass("show").children(dropdownMenu).removeClass("show");
+                });
+            } else {
+                dropdown.off("mouseenter mouseleave");
+            }
+        }
+
+        $(window).on("resize", adjustNav);
+
+        adjustNav();
+    });
+
+</script>
 
