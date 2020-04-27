@@ -13,13 +13,16 @@
     <!-- Styles -->
 </head>
 <body>
-@include('elemnts.navbar')
+    @include('elemnts.navbar')
 
-    @yield('content')
-@include('elemnts.footer')
+          @yield('content')
+
+    @include('elemnts.footer')
 <button class="btn btn-info btn" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script src="/js/toTop.js"></script>
-<script src="/js/contactbutton.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </div>
+    <script src="/js/toTop.js"></script>
+    <script src="/js/contactbutton.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

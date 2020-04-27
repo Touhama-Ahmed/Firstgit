@@ -233,7 +233,7 @@ p {
         font-size: 2rem;
     }
     .navbar-dark .navbar-nav .nav-link {
-        padding: 30px 15px;      /* Longeur navbar*/
+        padding: 30px 10px;      /* Longeur navbar*/
     }
     .navbar-dark .navbar-nav .nav-link::after {
         content: '';
@@ -333,7 +333,7 @@ p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: #000000;
     color: white;
     cursor: pointer;
     padding: 15px;

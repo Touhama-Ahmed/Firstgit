@@ -1,7 +1,7 @@
 
 <link href="/css/navbar.css" rel="stylesheet">
 <header class="header-area overlay">
-    <nav class="navbar navbar-expand-md navbar-dark" ">
+    <nav class="navbar navbar-expand-md navbar-dark" >
         <div class="container">
             <a href="#" class="navbar-brand">Rabat City</a>
 
