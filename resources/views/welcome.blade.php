@@ -17,9 +17,8 @@
         }
     </style>
     <link href="/css/welcom.css" rel="stylesheet">
-    <section class="content">
+        <section class="content">
         <main role="main">
-
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

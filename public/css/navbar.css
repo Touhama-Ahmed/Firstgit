@@ -208,7 +208,7 @@ p {
     background-color: red;
 }
 .content {
-    padding: 120px 0;
+    padding: 84px 0;
 }
 @media screen and (max-width: 768px) {
     .navbar-brand {
@@ -233,7 +233,7 @@ p {
         font-size: 2rem;
     }
     .navbar-dark .navbar-nav .nav-link {
-        padding: 30px 10px;      /* Longeur navbar*/
+        padding: 30px 15px;      /* Longeur navbar*/
     }
     .navbar-dark .navbar-nav .nav-link::after {
         content: '';
@@ -333,7 +333,7 @@ p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #000000;
+    background-color: red;
     color: white;
     cursor: pointer;
     padding: 15px;
