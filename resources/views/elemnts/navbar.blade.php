@@ -16,7 +16,7 @@
                 <li><a href="#" class="nav-item nav-link active">Home</a></li>
                 <li><a href="#" class="nav-item nav-link">Actualités</a></li>
                 <li class="dropdown">
-                    <a href="#" class="nav-item nav-link" data-toggle="dropdown">Services</a>
+                    <a href="/services" class="nav-item nav-link" data-toggle="dropdown">Services</a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">Dropdown Item 1</a>
                         <a href="#" class="dropdown-item">Dropdown Item 2</a>

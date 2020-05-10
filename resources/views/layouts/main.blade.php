@@ -13,12 +13,13 @@
 
     <!-- toTop -->
     <link href="/css/toTop.css" rel="stylesheet">
+    @yield('stylesheet')
 </head>
 
 <body>
 <a id="button"></a>
     @include('elemnts.navbar')
-
+    @include('elemnts.message')
           @yield('content')
 
     @include('elemnts.footer')
