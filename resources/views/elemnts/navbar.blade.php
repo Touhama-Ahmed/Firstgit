@@ -18,9 +18,12 @@
                 <li class="dropdown">
                     <a href="/services" class="nav-item nav-link" data-toggle="dropdown">Services</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Dropdown Item 1</a>
-                        <a href="#" class="dropdown-item">Dropdown Item 2</a>
-                        <a href="#" class="dropdown-item">Dropdown Item 3</a>
+                        @php($services = App\Service::all())
+                         @if(count($services)>0)
+                             @foreach($services as $service)
+                                <a href="#" class="dropdown-item">{{$service->Theme}}</a>
+                             @endforeach
+                         @endif
                     </div>
                 </li>
                 <li class="dropdown">

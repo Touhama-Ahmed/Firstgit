@@ -6,8 +6,8 @@
           <div class="row">
           @foreach($services as $service)
               <div class="col-lg-4">
-                <h3 class="text-center alert-dark"><a href="/services/{{$service->id}}">{!! $service->Intitule !!}</a></h3>
-                <p class="text-center alert-info">{!! $service->Resume !!}</p>
+                <h3 class="text-center alert-dark"><a href="/services/{{$service->Theme}}">{!! $service->Theme !!}</a></h3>
+                <p class="text-center alert-info">Photo</p>
               </div>
           @endforeach
           </div>

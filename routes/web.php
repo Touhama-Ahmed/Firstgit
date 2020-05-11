@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/services/article/{id}','ServicesController@showArticle');
 Route::resource('services','ServicesController');
 Route::resource('activites','ActivitesController');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Service;
+use DB;
 class ServicesController extends Controller
 {
     /**
@@ -16,7 +17,6 @@ class ServicesController extends Controller
         $services = Service::all();
         return view('Services.index')->with('services',$services);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -59,10 +59,15 @@ class ServicesController extends Controller
      */
     public function show($id)
     {
+        $services = DB::select('select * from services where Theme ="'.$id.'"');
+        return view('Services.show_sous_type')->with('services',$services);
+    }
+    public function showArticle($id)
+    {
+
         $services = Service::find($id);
         return view('Services.show')->with('service',$services);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
