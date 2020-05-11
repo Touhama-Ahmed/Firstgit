@@ -22,8 +22,9 @@
 <a id="button"></a>
 
     @include('elemnts.message')
+         <div style="margin-top: 4rem;">
           @yield('content')
-
+         </div>
     @include('elemnts.footer')
 
     <script src="/js/toTop.js"></script>
